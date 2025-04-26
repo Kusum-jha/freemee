@@ -1,98 +1,85 @@
-/* Reset */
+/* Reset everything */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
-body, html, #root {
+.app-container {
+  min-height: 100vh;
   width: 100%;
-  height: 100%;
+  background-color: #c0f00e; /* neon green-yellow */
+  overflow-x: hidden;
 }
 
-/* Main container */
-.main-container {
-  width: 100vw;
-  height: 100vh;
-  background-color: #c5f900; /* Your neon green */
+/* Navbar */
+.navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-/* Header */
-.header {
-  display: flex;
   justify-content: space-between;
-  width: 100%;
+  background-color: #1db954;
   padding: 10px 20px;
-  background-color: #c5f900; /* match background */
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-/* Navigation Buttons */
-.nav-buttons {
-  display: flex;
-  gap: 10px;
+.title {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
 }
 
 .nav-buttons button {
-  padding: 10px 20px;
-  border: 2px solid black;
+  margin-left: 10px;
+  padding: 6px 15px;
   background-color: white;
-  border-radius: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.nav-buttons button:hover {
-  background-color: #f0f0f0;
-}
-
-/* Form section */
-.form-section {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-/* Form Box */
-.form-box {
-  background-color: white;
+/* Content area */
+.main-content {
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  width: 300px;
 }
 
-.form-box h2 {
+/* Home */
+.welcome-text {
+  font-size: 28px;
   margin-bottom: 20px;
-  text-align: center;
-  color: #333;
 }
 
-.form-box input {
-  width: 100%;
-  padding: 10px;
+/* Auth form */
+.form-page {
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.form-heading {
+  font-size: 26px;
   margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid gray;
 }
 
-.form-box button {
-  width: 100%;
-  padding: 12px;
-  background-color: black;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-container input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.form-container button {
+  padding: 10px;
+  background-color: #1db954;
   color: white;
   border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.form-box button:hover {
-  background-color: #333;
 }

@@ -1,15 +1,15 @@
 import React from "react";
 
-function Navbar({ onSignupClick, onSigninClick }) {
+const Navbar = ({ onSignupClick, onSigninClick }) => {
   return (
-    <nav className="navbar">
-      <div className="logo">Free Me</div>
-      <div className="nav-links">
+    <header className="navbar">
+      <div className="title">Free Me</div>
+      <div className="nav-buttons">
         <button onClick={onSignupClick}>Signup</button>
         <button onClick={onSigninClick}>Signin</button>
       </div>
-    </nav>
+    </header>
   );
-}
+};
 
 export default Navbar;
